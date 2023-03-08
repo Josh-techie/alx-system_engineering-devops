@@ -1,2 +1,14 @@
 #!/bin/bash
-ls -la cd .. ls -la cd/boot ls -la
+# list files in current directory
+echo ".:"
+ls -la
+
+# list files in parent directory
+echo ""
+echo "..:"
+ls -la ..
+
+# list files in /boot directory
+echo ""
+echo "/boot:"
+ls -la /boot
