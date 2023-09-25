@@ -21,4 +21,4 @@
 
 
 ## Author:
-- (Josh-Techie)[https://github.com/Josh-techie]
+- [Josh-Techie](https://github.com/Josh-techie)
