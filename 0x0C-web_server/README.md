@@ -48,10 +48,10 @@
 - [Nginx](https://en.wikipedia.org/wiki/Nginx)
 - [How to Configure Nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
 - [Root and sub domain](https://landingi.com/help/domains-vs-subdomains/)
-- [HTTP requests] (https://www.tutorialspoint.com/http/http_methods.html)
+- [HTTP requests] (https://www.tutorialspoint.com/http/http_methods)
 - [HTTP redirection](https://moz.com/learn/seo/redirection)
-- [Not found HTTP response code] (https://en.wikipedia.org/wiki/HTTP_404)
-- [Logs files on Linux] (https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer/)
+- [Not found HTTP response code] (https://en.wikipedia.org/wiki)
+- [Logs files on Linux] (https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer)
 
 
 # Author:
