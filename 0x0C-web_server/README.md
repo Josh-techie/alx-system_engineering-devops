@@ -42,6 +42,14 @@
 - Introduction to the GNOME System Log Viewer for a user-friendly log monitoring experience.
 - Instructions on launching the System Log Viewer and its additional functions.
 
+### SCP ( Secure File Transfers )
+
+`scp` (Secure Copy Protocol) is a command-line tool used for securely transferring files and directories between local and remote systems. It's particularly helpful for tasks like copying files to or from a remote server or transferring data between different computers over a network.
+
+### CURL for HTTP Requests
+
+`curl` is a versatile command-line tool used to perform various tasks related to making HTTP requests. It allows you to interact with web services, retrieve data from websites, and even upload data when interacting with APIs or web applications.
+
 # Ressources:
 
 - [How The Web Works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
