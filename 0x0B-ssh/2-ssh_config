@@ -1,4 +1,8 @@
 # ssh config file
 Host 100.25.24.98
-      PasswordAuthentication no
-      IdentityFile ~/.ssh/school
+	PasswordAuthentication yes
+	IdentityFile ~/.ssh/school
+	SendEnv LANG LC_*
+	HashKnownHosts yes
+	GSSAPIAuthentication yes
+	GSSAPIDelegateCredentials no
