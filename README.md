@@ -19,3 +19,6 @@
 <div align="center">
   <img src="https://lh3.googleusercontent.com/vH1HTHhq7BIEuhIDuEc2Wrc2LgZigsJEWDR56ALuDFRZv9-jqCgHNHuBHIB-fLrrbwp7tJ8b7qeIJo0VtHUh=s0" alt="ALX logo">
 </div>
+
+## About:
+* This repository consists of all the Subject projects done with [ALX Africa](https://www.alxafrica.com/)  Full stack Software Engineering course in partnership with [Holberton School](https://www.holbertonschool.com/) by [Josh-Techie](https://github.com/Josh-techie)
