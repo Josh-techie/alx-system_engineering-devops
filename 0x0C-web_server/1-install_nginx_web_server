@@ -9,5 +9,6 @@ error_log_file="/var/log/nginx_installation_error.log"
 # Redirect stdout to the log file, stderr to both log files
 exec > >(tee -a "$log_file") 2> >(tee -a "$log_file" "$error_log_file" >&2)
 
-# Update package repositories, install Nginx, allow HTTP traffic, create index file, start Nginx
-apt-get -y update && apt-get -y install nginx && ufw allow 'Nginx HTTP' && echo 'Hello World!' > /var/www/html/index.nginx-debian.html && service nginx start
+# Update package repositories, install Nginx, install ufw, allow HTTP traffic, create index file, start Nginx
+apt-get -y update && apt-get -y install nginx ufw && ufw allow 'Nginx HTTP' && echo 'Hello World!' > /var/www/html/index.nginx-debian.html && service nginx start
+
