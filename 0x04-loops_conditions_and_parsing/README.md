@@ -101,4 +101,4 @@ tasks `102` and `103`.
   * Displays the grouped number of visitors to an IP address in the format
   `OCCURRENCE_NUMBER IP HTTP_CODE`.
   * Logs are grouped in order of greatest to lowest number of visitors.
-  * Uses `awk`.
+  * Uses `awk` .
