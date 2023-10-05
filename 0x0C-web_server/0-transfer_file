@@ -1,24 +1,26 @@
 #!/usr/bin/env bash
 
-#check the number of arguments
-if [ "$#" -lt 4 ]; then
-  echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+# Check the number of arguments
+if [ "$#" -lt 3 ]; then
+  echo "Usage: $0 PATH_TO_FILE USERNAME IP [PATH_TO_SSH_KEY]"
     exit 1
-    fi
+  fi
 
 # Assign arguments to variables
     PATH_TO_FILE="$1"
-    IP="$2"
-    USERNAME="$3"
-    PATH_TO_SSH_KEY="$4"
+    USERNAME="$2"
+    IP="$3"
+    PATH_TO_SSH_KEY="${4:-/root/.ssh/id_rsa}"  # Use default path if not provided
+
+# Extracting the filename from the given path
+    FILENAME=$(basename "$PATH_TO_FILE")
 
 # Use scp to transfer the file to the server
     scp -o StrictHostKeyChecking=no -i "$PATH_TO_SSH_KEY" "$PATH_TO_FILE" "$USERNAME@$IP":~/
 
 # Check the exit status of the scp command
     if [ "$?" -eq 0 ]; then
-      echo "File transferred successfully."
-      else
+      echo "File '$FILENAME' transferred successfully."
+    else
         echo "File transfer failed."
-      fi
-
+    fi
