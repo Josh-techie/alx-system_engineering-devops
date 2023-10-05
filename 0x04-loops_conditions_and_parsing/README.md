@@ -1,4 +1,4 @@
-## Loops, conditions and parsi
+# Loops, conditions and parsi
 
 - Loops and Conditions in Bash Script
 
