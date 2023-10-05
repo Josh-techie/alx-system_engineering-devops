@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Installs nginx web server
 
 # Log file location
