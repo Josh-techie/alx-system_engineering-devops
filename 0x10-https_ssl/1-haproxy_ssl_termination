@@ -21,8 +21,8 @@ listen hbnb
     balance roundrobin
     option httpclose
     option forwardfor
-    server 20205-web-01 44.192.38.3:80 check
-    server 20205-web-02 3.239.82.120:80 check
+    server 385864-web-01 34.204.101.74:80 check
+    server 385864-web-02 54.196.41.112:80 check
     option  forwardfor
     option  http-server-close
 
@@ -40,8 +40,8 @@ frontend www-https
 
 backend www-backend
    redirect scheme https if !{ ssl_fc }
-   server web-01 44.192.38.3:80 check
-   server web-02 3.239.82.120:80 check
+   385864-web-01 34.204.101.74:80 check
+   385864-web-02 54.196.41.112:80 check
 
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:54321
