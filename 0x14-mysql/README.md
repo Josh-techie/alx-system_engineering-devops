@@ -36,5 +36,5 @@ This project focuses on MySQL, involving the setup of a primary-replica infrastr
 	- Solutions must be developed independently
 	- Plagiarism is strictly forbidden and will result in removal from the program
 
-## Copyright
-	© 2023 ALX, All rights reserved.
+## Author:
+- You can fin me: [Josh-techie](https://github.com/Josh-techie)
