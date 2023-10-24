@@ -3,6 +3,9 @@
 ## Overview
 This project involves building Python scripts to interact with a REST API and manipulate employee data. The tasks include gathering data from the API, exporting data to CSV and JSON formats, and adhering to specific coding standards and documentation practices.
 
+
+## General
+
 - 🔄 **API Basics:**
   - An API (Application Programming Interface) is a set of tools for building software applications.
   - APIs specify how software components interact, providing building blocks for easier program development.
@@ -124,7 +127,7 @@ This project involves building Python scripts to interact with a REST API and ma
 - 🔗 References to external sources like style guides and documentation are provided for additional guidance.
 
 ## Ressources:
-    - [Friends don’t let friends program in shell script] (https://www.turnkeylinux.org/blog/friends-dont-let-friends-program-shell-script)
+    - [Friends don’t let friends program in shell script](https://www.turnkeylinux.org/blog/friends-dont-let-friends-program-shell-script)
     - [What is an API](https://intranet.alxswe.com/rltoken/zeBO6_RNTlwaotyRRNAzoQ)
     - [What is an API? In English, please](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/)
     - [What is a REST API](https://www.sitepoint.com/rest-api/)
