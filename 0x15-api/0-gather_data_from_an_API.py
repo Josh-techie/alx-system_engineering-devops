@@ -34,7 +34,7 @@ if __name__ == "__main__":
         ))
 
         for task in completed_tasks:
-            print("\t {}".format(task['title']))
+            print("\t{}".format(task['title']))
 
     except requests.exceptions.RequestException as e:
         print("Error:", e)
