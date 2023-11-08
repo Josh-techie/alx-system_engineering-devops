@@ -16,7 +16,7 @@ def count_words(subreddit, word_list, instances={}, after=None, count=0):
         after (str): The parameter for the next page of the API results.
         count (int): The parameter of results matched thus far.
     """
-    url = f"https://www.reddit.com/r/{subreddit}/hot/.json"
+    url = f"https://www.reddit.com/r/{subreddit.lower()}/hot/.json"
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
     }
@@ -25,16 +25,15 @@ def count_words(subreddit, word_list, instances={}, after=None, count=0):
         "count": count,
         "limit": 100
     }
-    response = requests.get(url, headers=headers,
-                            params=params, allow_redirects=False)
-
     try:
-        results = response.json()
+        response = requests.get(url, headers=headers,
+                                params=params, allow_redirects=False)
         response.raise_for_status()  # Raise an HTTPError for bad responses
     except requests.exceptions.HTTPError:
         print("")
         return
 
+    results = response.json()
     data = results.get("data")
     if data is None:
         print("")
@@ -44,7 +43,7 @@ def count_words(subreddit, word_list, instances={}, after=None, count=0):
     count += data.get("dist")
     for child in data.get("children"):
         title = child.get("data").get("title").lower().split()
-        for word in word_list:
+        for word in set(word_list):
             if word.lower() in title:
                 times = title.count(word.lower())
                 instances[word] = instances.get(word, 0) + times
