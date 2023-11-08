@@ -73,7 +73,7 @@ sudo tcpdump -A -l
 
 <a href="https://ibb.co/Ltr6sZh"><img src="https://i.ibb.co/7WQV01N/image.png" alt="image" border="0"></a>
 
-- [Wordlist](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt) **Rockyou.txt**
+- [Rockyou_Wordlist](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt)
 
 ```sh
 # command
