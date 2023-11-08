@@ -12,8 +12,8 @@ def count_words(subreddit, word_list, instances={}, after=None, count=0):
         "limit": 100
     }
     try:
-        response = requests.get(url, headers=headers, params=params,
-                                allow_redirects=False)
+        response = requests.get(url, headers=headers,
+                                params=params, allow_redirects=False)
         response.raise_for_status()
     except requests.exceptions.HTTPError:
         return
@@ -36,8 +36,8 @@ def count_words(subreddit, word_list, instances={}, after=None, count=0):
     if after is None:
         if not instances:
             return
-        sorted_instances = sorted(instances.items(), key=lambda
-                                  kv: (-kv[1], kv[0]))
+        sorted_instances = sorted(instances.items(),
+                                  key=lambda kv: (-kv[1], kv[0]))
         [print(f"{k}: {v}") for k, v in sorted_instances]
     else:
         count_words(subreddit, word_list, instances, after, count)
