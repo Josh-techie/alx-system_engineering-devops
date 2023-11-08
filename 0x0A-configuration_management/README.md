@@ -20,10 +20,10 @@
 - Puppet-lint can also automatically correct some code issues.
 
 ## Ressources:
-* [Intro TO CM] (https://www.digitalocean.com/community/tutorials/an-introduction-to-configuration-management)
-* [Attributes:File] (https://www.puppet.com/docs/puppet/5.5/types/file.html)
+* [Intro TO CM](https://www.digitalocean.com/community/tutorials/an-introduction-to-configuration-management)
+* [Attributes:File](https://www.puppet.com/docs/puppet/5.5/types/file.html)
 * [Install Lint ](http://puppet-lint.com/)
-* [Puppet Checker Repo] (https://github.com/voxpupuli/puppet-mode)
+* [Puppet Checker Repo](https://github.com/voxpupuli/puppet-mode)
 
 ## Author:
 - [Josh-Techie](https://github.com/Josh-techie)
