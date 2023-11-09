@@ -3,16 +3,17 @@
 apt-get update
 apt-get install -y nginx
 
+
 mkdir -p /var/www/html
 touch /var/www/html/index.html
 echo "Hello world" > /var/www/html/index.html
 touch /var/www/html/404.html
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 
-printf %s "server {
+printf %s 'server {
     listen 80 default_server;
     listen [::]:80 default_server;
-    add_header X-Served-By $HOSTNAME;
+    add_header X-Served-By "385864-web-01"
     root   /var/www/html;
     index  index.html index.htm;
     location /redirect_me {
@@ -23,6 +24,7 @@ printf %s "server {
       root /var/www/html;
       internal;
     }
-}" > /etc/nginx/sites-available/default
+}' > /etc/nginx/sites-available/default
+
 
 service nginx restart
