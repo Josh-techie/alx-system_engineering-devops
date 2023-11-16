@@ -1,4 +1,6 @@
-# Increases the amount of traffic an Nginx server can handle.
+ky_is_the_limit_not.pp
+
+# This Puppet manifest optimizes Nginx settings to handle high traffic.
 
 # Increase the ULIMIT of the default file
 exec { 'fix--for-nginx':
@@ -8,6 +10,7 @@ exec { 'fix--for-nginx':
 
 # Restart Nginx
 exec { 'nginx-restart':
-  command => 'nginx restart',
-  path    => '/etc/init.d/'
+  command => 'service nginx restart',
+  path    => '/etc/init.d/',
+  onlyif  => 'test -f /etc/init.d/nginx', # Ensure the file exists before restarting
 }
