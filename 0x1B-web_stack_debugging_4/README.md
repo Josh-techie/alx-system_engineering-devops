@@ -16,3 +16,5 @@ web stack.
   * [1-user_limit.pp](./1-user_limit.pp): Puppet manifest that changes the operating system
   configuration so that it is possible to login with the user `holberton` and open a file
   without error.
+## Author:
+You can find me as [Josh-techie](https://github.com/Josh-techie)
